@@ -1,0 +1,13 @@
+{
+    "name": "noisyscanner/contactformbackend",
+    "type": "library",
+    "require": {
+        "swiftmailer/swiftmailer": "^6.1"
+    },
+    "authors": [
+        {
+            "name": "Brad Reed",
+            "email": "brad@bradreed.co.uk"
+        }
+    ]
+}
