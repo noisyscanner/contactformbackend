@@ -40,9 +40,7 @@ class Mailer {
 
     public function send($name, $email, $text)
     {
-        $cleanedMessage = filter_var($text, FILTER_SANITIZE_EMAIL);
-
-        $body = $cleanedMessage . "\n\n" . "From $name <$email>";
+        $body = $text . "\n\n" . "From $name <$email>";
 
         $message = (new Swift_Message($this->subject))
             ->setFrom([$this->fromEmail => $this->fromName])
